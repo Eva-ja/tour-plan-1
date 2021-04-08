@@ -1,6 +1,14 @@
 @media (max-width:1200px)
   .container
     max-width: 960px
+  .slider
+    width: 600px
+  .swiper
+    &-slide
+      &__img
+        width: 100%
+        object-fit: cover
+        height: 100%
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -22,7 +30,7 @@
     &__input
       width: 340px
   .slider
-    max-width: 700px
+    width: 100%
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -69,9 +77,7 @@
         order: -1
         margin-left: 0
   .slider
-    max-width: 576px
-  .swiper-container
-    max-height: 350px
+    height: 350px
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -81,4 +87,6 @@
   .navbar
     &-top
       padding-top: 26px
-      padding-bottom: 26px
+      padding-bottom:
+  .swiper-container
+    max-height: 180px
