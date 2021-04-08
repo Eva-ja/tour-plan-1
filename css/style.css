@@ -425,6 +425,11 @@ template {
   text-transform: uppercase;
 }
 
+.navbar-menu__item {
+  font-size: 14px;
+  line-height: 15px;
+}
+
 .logo {
   width: 177px;
 }
