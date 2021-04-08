@@ -7,7 +7,8 @@
   <title>Best Tour Plan - hotel Booking</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="navbar">
@@ -100,8 +101,45 @@
       <!-- /.hotel-info__right -->
     </div>
     <!-- hotel-info -->
+    <div class="hotel-grid">
+      <div class="slider">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/slides.jpg" alt="slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/hotel-3.jpg" alt="slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/hotel-4.jpg" alt="slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/hotel-5.jpg" alt="slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/hotel-6.jpg" alt="slide">
+            </div>
+          </div>
+      
+          <!-- If we need navigation buttons -->
+          <div class="slider-button slider-button--prev"></div>
+          <div class="slider-button slider-button--next"></div>
+
+        </div>
+        <!-- swiper-container -->
+      </div>
+      <!-- /.slider -->
+    </div>
+    <!-- hotel-grid -->
   </div>
   <!-- /.container -->
 </section>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
