@@ -556,6 +556,7 @@ template {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .hotel-info__name {
@@ -578,6 +579,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .hotel-wrapper {
@@ -605,8 +607,18 @@ template {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 48px;
   height: 8px;
+}
+
+.stars__img {
+  margin-right: 2px;
+  width: 6px;
+  height: 6px;
 }
 
 .offer {
