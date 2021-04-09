@@ -556,7 +556,6 @@ template {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 20px;
 }
 
 .hotel-info__name {
@@ -595,12 +594,19 @@ template {
           align-items: center;
 }
 
+.hotel-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .stars {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
+  width: 48px;
   height: 8px;
-  margin-bottom: 5px;
 }
 
 .offer {
@@ -700,6 +706,16 @@ template {
   background-position: center;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.booking {
+  max-width: 350px;
+  height: 210px;
+  padding: 28px;
+  color: #ffffff;
+  background-color: #0A223D;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
 }
 
 @media (max-width: 1200px) {

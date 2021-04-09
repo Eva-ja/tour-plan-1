@@ -5,7 +5,6 @@
     display: flex
     align-items: center
     justify-content: space-between
-    padding-bottom: 20px
     &__name
       margin-top: 5px
       margin-bottom: 0
@@ -25,10 +24,12 @@
     display: flex
     flex-wrap: wrap
     align-items: center
+  &-grid
+    display: flex
 .stars
   flex-basis: 100%
+  width: 48px
   height: 8px
-  margin-bottom: 5px
 .offer
   background-color: $primary
   padding: 4px 9px
@@ -96,3 +97,10 @@
       background-repeat: no-repeat
       background-position: center
       object-fit: cover
+.booking
+  max-width: 350px
+  height: 210px
+  padding: 28px
+  color: $light
+  background-color: $dark
+  border-radius: 8px
