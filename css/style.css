@@ -1062,6 +1062,9 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+    height: 14px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -1070,7 +1073,8 @@ template {
     max-width: 280px;
   }
   .navbar-top {
-    padding-top: 26px;
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
   .slider {
     height: 180px;
