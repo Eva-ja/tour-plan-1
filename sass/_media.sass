@@ -43,6 +43,8 @@
   .map
     width: 340px
     height: 210px
+  .newsletter
+    padding-top: 92px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -98,11 +100,22 @@
     margin-bottom: 20px
   .map
     width: 100%
+  .newsletter
+    padding-top: 76px
+    height: 320px
+    &-wrapper
+      flex-wrap: wrap
+    &__title
+      margin-bottom: 37px
 @media ( max-width: 576px )
   .logo
     width: 99px
     height: 14px
     object-fit: cover
+  .subscribe
+    width: 100%
+    &__input
+      padding-left: 20px
 @media screen and (min-width: 320px) and (max-width: 479px)
   .container
     max-width: 280px
@@ -119,3 +132,12 @@
       margin-bottom: 20px
   .map
     height: 173px
+  .newsletter
+    &-title
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-size: 30px
+        line-height: 38px
+        margin-top: 5px
