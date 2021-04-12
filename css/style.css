@@ -22,6 +22,10 @@ button {
   border: none;
   cursor: pointer;
   outline: none;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -700,14 +704,10 @@ template {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 48px;
-  height: 8px;
 }
 
 .stars__img {
-  margin-right: 2px;
-  width: 6px;
-  height: 6px;
+  margin-right: 4px;
 }
 
 .offer {
@@ -890,6 +890,10 @@ template {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .map {
@@ -1011,6 +1015,10 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .reviews {
@@ -1045,7 +1053,7 @@ template {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 731px;
+  max-width: 731px;
   margin: 45px auto 0;
   background-color: #fff;
   -webkit-border-radius: 8px;
@@ -1076,8 +1084,6 @@ template {
   right: 62px;
   background-image: url(../img/quote-right.svg);
   background-repeat: no-repeat;
-  -webkit-background-size: 10px 10px;
-          background-size: 10px;
 }
 
 .reviews-slider__button {
@@ -1172,6 +1178,8 @@ template {
 .reviews-slider__text {
   max-width: 537px;
   margin: auto;
+  height: 116px;
+  overflow-y: auto;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1187,7 +1195,7 @@ template {
   .hotel-slider {
     width: 590px;
   }
-  .swiper-slide__img {
+  .hotel-slider__img {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1220,9 +1228,6 @@ template {
   .search__input {
     width: 340px;
   }
-  .hotel-slider {
-    width: 100%;
-  }
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1232,6 +1237,9 @@ template {
   }
   .hotel__slider {
     margin-bottom: 30px;
+  }
+  .hotel-slider {
+    width: 100%;
   }
   .hotel-place {
     -webkit-box-orient: horizontal;
@@ -1249,6 +1257,14 @@ template {
   }
   .newsletter {
     padding-top: 92px;
+  }
+  .reviews-slider__item {
+    max-width: 579px;
+    padding-right: 62px;
+    padding-left: 62px;
+  }
+  .reviews-slider__text {
+    height: 133px;
   }
 }
 
@@ -1356,6 +1372,36 @@ template {
   .newsletter__title {
     margin-bottom: 37px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__item {
+    padding-right: 31px;
+    padding-left: 31px;
+    padding-bottom: 36px;
+  }
+  .reviews-slider__item::before, .reviews-slider__item::after {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 30px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    margin-left: -85px;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    margin-right: -85px;
+    -webkit-transform: translate(50%, 0);
+        -ms-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+  }
 }
 
 @media (max-width: 576px) {
@@ -1371,6 +1417,15 @@ template {
   .subscribe__input {
     padding-left: 20px;
   }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .reviews-slider__text {
+    height: 160px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
@@ -1381,14 +1436,14 @@ template {
     padding-top: 28px;
     padding-bottom: 28px;
   }
-  .hotel-slider {
-    height: 180px;
-  }
   .hotel-info {
     margin-bottom: 38px;
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .hotel-slider {
+    height: 180px;
   }
   .map {
     height: 173px;
@@ -1402,5 +1457,11 @@ template {
     font-size: 30px;
     line-height: 38px;
     margin-top: 5px;
+  }
+  .reviews-slider__item {
+    max-width: 281px;
+  }
+  .reviews-slider__text {
+    height: 266px;
   }
 }
