@@ -1331,6 +1331,9 @@ template {
   .search__input {
     width: 340px;
   }
+  .hotel {
+    padding-bottom: 60px;
+  }
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1441,6 +1444,7 @@ template {
   }
   .hotel {
     padding-top: 5px;
+    padding-bottom: 40px;
   }
   .hotel-name {
     -webkit-flex-basis: 100%;
