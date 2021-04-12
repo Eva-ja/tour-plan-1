@@ -1264,10 +1264,6 @@ template {
   z-index: -2;
 }
 
-.card__size {
-  width: 160px;
-}
-
 .card__title {
   margin-top: auto;
   margin-bottom: 18px;
@@ -1527,8 +1523,17 @@ template {
         -ms-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
   .activities__card {
     margin-bottom: 10px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 36px;
   }
   .card {
     width: 49%;
@@ -1565,9 +1570,6 @@ template {
   .activities {
     padding-top: 40px;
     padding-bottom: 60px;
-  }
-  .activities__title {
-    margin-bottom: 36px;
   }
   .activities__crd {
     margin-bottom: 20px;
