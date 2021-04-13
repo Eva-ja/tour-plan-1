@@ -1123,6 +1123,7 @@ template {
 }
 
 .package-box__button {
+  font-family: 'Nunito', sans serif;
   width: 120px;
   height: 40px;
   font-style: normal;
