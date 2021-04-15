@@ -34,6 +34,9 @@
     &__item
       font-size: 14px
       line-height: 15px
+      &--mobile
+        &_visible
+          display: none
 .logo
   width: 177px
 .search
@@ -64,8 +67,12 @@
     outline: none
     border: none
     cursor: pointer
-::-webkit-input-placeholder
-  color: #333333
+.search__input::placeholder
+  color: $grey
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 15px
 .user
   display: flex
   align-items: center

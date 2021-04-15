@@ -76,7 +76,7 @@
     font-size: 14px
     line-height: 22px
     color: $footer-color
-    &--mb-2
+    &--mb-2:not(:last-child)
       margin-bottom: 17px
   &__icon
     &-wrapper
@@ -111,6 +111,10 @@
   &__button
     width: 160px
     height: 50px
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
     background-color: $primary
     color: $light
     border-radius: 4px
@@ -145,3 +149,19 @@
       margin: 0
       padding: 0
       list-style: none
+  &__tel
+    text-decoration: none
+    color: $footer-color
+    white-space: nowrap
+.footer__input::placeholder
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 15px
+  color: $footer-color
+.footer__message::placeholder
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 15px
+  color: $footer-color

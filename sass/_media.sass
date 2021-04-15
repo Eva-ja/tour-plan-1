@@ -22,9 +22,13 @@
         object-fit: cover
   .footer
     &-wrapper
-      grid-template-columns: repeat(2, 200px) 252px 250px
+      grid-template-columns: repeat(2, 200px) 280px 200px
     &__input
       flex-basis: 100%
+    &-legal
+      align-items: flex-start
+      &__menu
+        align-self: flex-start
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -132,19 +136,62 @@
       grid-column: 1 / 4
       margin-left: 0
       margin-top: 18px
-    &-legal
-      align-items: flex-start
-      &__menu
-        align-self: flex-start
 @media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
+  body
+    padding-top: 78px
   .navbar
+    &__mobile
+      &--fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 3
     &__search,
-    &-menu,
     &__user
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &__user
+      &--mobile
+        &_visible
+          flex-direction: column
+          align-items: center
+    &__search
+      &--mobile
+        &_visible
+          margin-left: 0
+          width: 240px
+          margin-bottom: 20px
+    &-bottom
       display: none
+      position: fixed
+      top: 78px
+      right: 0
+      left: 0
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      padding-top: 30px
+      padding-bottom: 40px
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &_visible
+            display: block
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
+        margin-bottom: 7px
   .menu
     &-button
       display: flex
@@ -252,7 +299,6 @@
     padding-top: 69px
     &-wrapper
       grid-template-columns: 202px 293px
-      grid-gap: 35px
     &__contact
       &-details
         grid-column: span 2
@@ -271,6 +317,11 @@
     &-police
       grid-column: 1 / 3
 @media ( max-width: 576px )
+  body
+    padding-top: 74px
+  .navbar
+    &-bottom
+      top: 74px
   .logo
     width: 99px
     height: 14px
@@ -343,7 +394,7 @@
     &__contact
       &-details
         margin-top: 10px
-        margin-bottom: 13px
+        margin-bottom: 30px
         grid-row: 6
         grid-column: 1
       &-form
@@ -371,10 +422,14 @@
 @media screen and (min-width: 320px) and (max-width: 479px)
   .container
     max-width: 280px
+  body
+    padding-top: 70px
   .navbar
     &-top
       padding-top: 28px
       padding-bottom: 28px
+    &-bottom
+      top: 70px
   .hotel
     &-info
       margin-bottom: 38px
