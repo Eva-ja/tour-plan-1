@@ -142,6 +142,10 @@
     width: 92%
   body
     padding-top: 78px
+  .body
+    &__mobile
+      &--visible
+        overflow: hidden
   .navbar
     &__mobile
       &--fixed
@@ -176,12 +180,12 @@
       left: 0
       &--visible
         display: block
-        overflow-y: scroll
-        height: 498px
+        overflow: auto
+        max-height: 90%
     &-menu
       flex-direction: column
       padding-top: 30px
-      padding-bottom: 218px
+      padding-bottom: 48px
       &__item
         margin-bottom: 20px
         &--mobile

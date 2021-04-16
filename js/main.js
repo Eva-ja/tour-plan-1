@@ -35,3 +35,11 @@ menuButton.addEventListener("click", function () {
     .querySelector(".navbar-bottom")
     .classList.toggle("navbar-bottom--visible");
 });
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке меню");
+  document
+    .querySelector(".body__mobile")
+    .classList.toggle("body__mobile--visible");
+});
