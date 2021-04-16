@@ -17,7 +17,6 @@ $body = "
 <b>Имя:</b> $name<br>
 <b>Почта:</b> $email<br>
 <b>Мобильный телефон:</b> $phone<br><br>
-<b>Почта:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
 
@@ -27,7 +26,6 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    // $mail->SMTPDebug = 2;
     $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
@@ -35,7 +33,6 @@ try {
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'hayesevamail@gmail.com'; // Логин на почте
     $mail->Password   = 'ettnnibsaabupgtz'; // Пароль на почте
-    $mail->Password   = 'hayesevamailescada123'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('hayesevamail@gmail.com', 'Ева Савицкая'); // Адрес самой почты и имя отправителя
@@ -59,4 +56,3 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
