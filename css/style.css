@@ -2251,6 +2251,8 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow-y: scroll;
+    height: 498px;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -2259,7 +2261,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 218px;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
