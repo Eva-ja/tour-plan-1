@@ -2188,15 +2188,22 @@ template {
   color: #BDBDBD;
 }
 
-.thankyou__button {
-  margin-top: 20px;
-}
-
 .thankyou__link {
+  display: block;
+  width: 235px;
+  height: 45px;
+  padding: 13px 54px;
+  margin-top: 30px;
   text-decoration: none;
-  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
