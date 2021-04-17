@@ -61,7 +61,7 @@
       flex-direction: row
   .booking
     width: 340px
-  #map
+  .map
     width: 340px
     height: 210px
   .newsletter
@@ -136,6 +136,13 @@
       grid-column: 1 / 4
       margin-left: 0
       margin-top: 18px
+  .modal
+    &__info
+      flex-basis: 100%
+      margin-bottom: 15px
+      order: 1
+    &__button
+      order: 2
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -243,7 +250,7 @@
   .booking
     width: 100%
     margin-bottom: 20px
-  #map
+  .map
     width: 100%
   .newsletter
     padding-top: 76px
@@ -428,6 +435,12 @@
       &__menu
         min-width: 277px
         margin-bottom: 10px
+  .modal
+    &__dialog
+      padding: 33px 60px
+      width: 400px
+      &--new
+        padding: 50px 20px
 @media screen and (min-width: 320px) and (max-width: 479px)
   .container
     max-width: 280px
@@ -444,7 +457,7 @@
       margin-bottom: 20px
     &-slider
       height: 180px
-  #map
+  .map
     height: 173px
   .newsletter
     &-title
@@ -475,3 +488,7 @@
   .footer
     &-wrapper
       grid-template-columns: 280px
+  .modal
+    &__dialog
+      padding: 33px 20px
+      width: 280px

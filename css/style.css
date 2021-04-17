@@ -969,7 +969,7 @@ template {
      text-overflow: ellipsis;
 }
 
-#map {
+.map {
   width: 347px;
   height: 213px;
   overflow: hidden;
@@ -978,7 +978,7 @@ template {
           border-radius: 10px;
 }
 
-#map__frame {
+.map__frame {
   width: 100%;
   height: 213px;
   border: none;
@@ -2029,8 +2029,8 @@ template {
   -webkit-border-radius: 8px;
           border-radius: 8px;
   color: #ffffff;
-  max-width: 478px;
-  height: 487px;
+  width: 478px;
+  min-height: 487px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
@@ -2041,6 +2041,10 @@ template {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+}
+
+.modal__dialog--new {
+  padding: 60px 88px;
 }
 
 .modal__close {
@@ -2184,6 +2188,17 @@ template {
   color: #BDBDBD;
 }
 
+.thankyou__button {
+  margin-top: 20px;
+}
+
+.thankyou__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -2285,7 +2300,7 @@ template {
   .booking {
     width: 340px;
   }
-  #map {
+  .map {
     width: 340px;
     height: 210px;
   }
@@ -2397,6 +2412,22 @@ template {
     grid-column: 1 / 4;
     margin-left: 0;
     margin-top: 18px;
+  }
+  .modal__info {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    margin-bottom: 15px;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
@@ -2558,7 +2589,7 @@ template {
     width: 100%;
     margin-bottom: 20px;
   }
-  #map {
+  .map {
     width: 100%;
   }
   .newsletter {
@@ -2848,6 +2879,13 @@ template {
     min-width: 277px;
     margin-bottom: 10px;
   }
+  .modal__dialog {
+    padding: 33px 60px;
+    width: 400px;
+  }
+  .modal__dialog--new {
+    padding: 50px 20px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
@@ -2870,7 +2908,7 @@ template {
   .hotel-slider {
     height: 180px;
   }
-  #map {
+  .map {
     height: 173px;
   }
   .newsletter-title {
@@ -2911,5 +2949,9 @@ template {
   .footer-wrapper {
     -ms-grid-columns: 280px;
         grid-template-columns: 280px;
+  }
+  .modal__dialog {
+    padding: 33px 20px;
+    width: 280px;
   }
 }
