@@ -2030,7 +2030,8 @@ template {
           border-radius: 8px;
   color: #ffffff;
   width: 478px;
-  min-height: 487px;
+  max-height: 90%;
+  overflow: auto;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
@@ -2447,7 +2448,7 @@ template {
     padding-top: 78px;
   }
   .body__mobile--visible {
-    overflow: hidden;
+    overflow-y: hidden;
   }
   .navbar__mobile--fixed {
     position: fixed;

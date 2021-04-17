@@ -46,6 +46,13 @@ menuButton.addEventListener("click", function () {
     .classList.toggle("body__mobile--visible");
 });
 
+var bodyButton = document.querySelector(".booking__button");
+bodyButton.addEventListener("click", function () {
+  console.log("Клик по кнопке меню");
+  document
+    .querySelector(".body__mobile")
+    .classList.toggle("body__mobile--visible");
+});
 
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
