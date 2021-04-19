@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,15 +12,16 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="body body_mobile">
 
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar_mobile navbar_mobile--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="index.html" class="logo">
+        <a href="#" class="logo">
           <img src="img/horizontal-logo.svg" alt="logo" class="logo__image">
         </a>
 
@@ -95,10 +97,11 @@
     </div>
     <!-- /.container -->
   </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <a href="index.html" class="footer__logo">
+        <a href="#" class="footer__logo">
           <img src="img/Besttourplan-2.svg" alt="Logo: Best Tour Plan">
         </a>
         <div class="footer__list footer__categories">
@@ -178,7 +181,7 @@
               <div class="footer__icon-wrapper">
                 <img src="img/email.svg" alt="Icon: email" class="footer__icon">
               </div>
-              <p class="footer__contact"><a href="cherly.lawson@example.com"
+              <p class="footer__contact"><a href="mailto:cherly.lawson@example.com"
                   class="footer__tel">cherly.lawson@example.com</a></p>
             </li>
           </ul>
@@ -186,10 +189,16 @@
         <!-- footer-contact__details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-            <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required
+                minlength="2" maxlength="10">
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" class="input phone footer__input" placeholder="Phone Number*" name="phone" minlength="17"
+                maxlength="17" required>
+            </div>
+            <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
@@ -213,9 +222,13 @@
     <!-- /.container -->
   </footer>
   
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
   </body>
   

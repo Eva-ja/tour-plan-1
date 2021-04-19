@@ -5,8 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - hotel Booking</title>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=bb165739-3f6f-45d5-9713-9d2aecfdda41&lang=ru_RU" type="text/javascript">
-  </script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&family=Nunito:wght@400;600;800&display=swap"
@@ -15,13 +13,13 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="body__mobile"> 
+<body class="body body_mobile"> 
   
-<header class="navbar navbar__mobile--fixed">
+<header class="navbar navbar_mobile navbar_mobile--fixed">
     <div class="container">
-      <div class="navbar-top">
+      <div class="navbar-top" data-aos="fade-up">
         <a href="#" class="logo">
-          <img src="img/horizontal-logo.svg" alt="logo" class="logo__image" name="main">
+          <img src="img/horizontal-logo.svg" alt="logo" class="logo__image">
         </a>
 
         <form action="#" class="search navbar__search navbar__search--mobile_hidden">
@@ -244,7 +242,7 @@
             <span class="package-box__oldprice">$ 10,500</span>
             <div class="package-box__price">
               <h3 class="package-box__newprice">$ 8,500</h3>
-              <button class="package-box__button">Book Now</button>
+              <button data-toggle="modal" data-href="#booking-modal" class="package-box__button">Book Now</button>
             </div>
           </div>
           <!-- package-wrap__card -->
@@ -280,7 +278,7 @@
             <span class="package-box__oldprice">$ 8,500</span>
             <div class="package-box__price">
               <h3 class="package-box__newprice">$ 3,000</h3>
-              <button class="package-box__button">Book Now</button>
+              <button data-toggle="modal" data-href="#booking-modal" class="package-box__button">Book Now</button>
             </div>
           </div>
           <!-- package-wrap__card -->
@@ -316,7 +314,7 @@
             <span class="package-box__oldprice">$ 10,500</span>
             <div class="package-box__price">
               <h3 class="package-box__newprice">$ 9,500</h3>
-              <button class="package-box__button">Book Now</button>
+              <button data-toggle="modal" data-href="#booking-modal" class="package-box__button">Book Now</button>
             </div>
           </div>
           <!-- package-wrap__card -->
@@ -352,7 +350,7 @@
             <span class="package-box__oldprice">$ 4,500</span>
             <div class="package-box__price">
               <h3 class="package-box__newprice">$ 2,500</h3>
-              <button class="package-box__button">Book Now</button>
+              <button data-toggle="modal" data-href="#booking-modal" class="package-box__button">Book Now</button>
             </div>
           </div>
           <!-- package-wrap__card -->
@@ -388,7 +386,7 @@
             <span class="package-box__oldprice">$ 6,500</span>
             <div class="package-box__price">
               <h3 class="package-box__newprice">$ 3,500</h3>
-              <button class="package-box__button">Book Now</button>
+              <button data-toggle="modal" data-href="#booking-modal" class="package-box__button">Book Now</button>
             </div>
           </div>
           <!-- package-wrap__card -->
@@ -411,8 +409,8 @@
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="form subscribe newsletter__subscribe">
-        <input type="email" placeholder="Your email address" class="subscribe__input" name="email">
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+        <input type="email" placeholder="Your email address" class="subscribe__input" name="email" required>
         <button class="subscribe__button">
           Send
         </button>
@@ -517,25 +515,25 @@
       <div class="card activities__card">
         <img src="img/activity-1.jpg" alt="Photo: activity" class="card__image card__img">
         <h3 class="card__title">The curious corner<br> of chamarel</h3>
-        <button class="card__button">Book Now</button>
+        <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
       </div>
       <!-- card -->
       <div class="card activities__card">
         <img src="img/activity-2.jpg" alt="Photo: activity" class="card__image card__img">
         <h3 class="card__title">Gymkhana club golf<br> course</h3>
-        <button class="card__button">Book Now</button>
+        <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
       </div>
       <!-- card -->
       <div class="card activities__crd">
         <img src="img/activity-3.jpg" alt="Photo: activity" class="card__image card__img">
         <h3 class="card__title">Tamarind falls hiking<br> trip - full day</h3>
-        <button class="card__button">Book Now</button>
+        <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
       </div>
       <!-- card -->
       <div class="card">
         <img src="img/activity-4.jpg" alt="Photo: activity" class="card__image">
         <h3 class="card__title">The blue marine discovery<br> quest</h3>
-        <button class="card__button">Book Now</button>
+        <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
       </div>
       <!-- card -->
     </div>
@@ -635,10 +633,10 @@
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
             <div class="footer__input-group">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlenght="3">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2" maxlength="10">
             </div>
             <div class="footer__input-group">
-              <input type="tel" class="input phone footer__input" placeholder="Phone Number*" name="phone" required>
+              <input type="tel" class="input phone footer__input" placeholder="Phone Number*" name="phone" minlength="17" maxlength="17" required>
             </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <button class="button footer__button" type="submit">Send</button>
@@ -674,8 +672,8 @@
     </a>
     <h3 class="modal__title">Booking</h3>
     <form action="send.php" method="POST" class="modal__form form">
-      <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlenght="3">
-      <input type="tel" class="input phone modal__input" placeholder="Phone Number*" name="phone" required>
+      <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+      <input type="tel" class="input phone modal__input" placeholder="Phone Number*" name="phone" minlength="17" maxlength="17" required>
       <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
       <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
       <button class="button modal__button" type="submit">Send</button>
@@ -697,8 +695,8 @@
     </a>
     <h3 class="modal__title">Send us a feedback</h3>
     <form action="send.php" method="POST" class="modal__form form">
-      <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="3">
-      <input type="email" class="input modal__input" placeholder="Email*" name="Email" required>
+      <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+      <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
       <textarea class="message modal__message" placeholder="Your feedback" name="message"></textarea>
       <button class="button modal__button" type="submit">Send</button>
       <span class="modal__info">* Required Fields</span>
