@@ -39,6 +39,9 @@
           display: none
 .logo
   width: 177px
+  &__image
+    width: 177px
+    height: 24px
 .search
   display: flex
   position: relative
@@ -88,3 +91,21 @@
     font-weight: normal
     font-size: 14px
     line-height: 18px
+.navbar__search
+  position: relative
+.navbar__search i
+  position: absolute
+  width: 1px
+  height: 14px
+  background-color: $grey
+  left: 116px
+  top: 13px
+  animation-name: blink
+  animation-duration: 800ms
+  animation-iteration-count: infinite
+  opacity: 1
+.navbar__search input:focus + i
+  display: none
+@keyframes blink
+	from { opacity: 1; }
+	to { opacity: 0; }
