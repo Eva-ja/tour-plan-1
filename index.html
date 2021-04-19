@@ -11,25 +11,26 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="body body_mobile"> 
   
 <header class="navbar navbar_mobile navbar_mobile--fixed">
     <div class="container">
-      <div class="navbar-top" data-aos="fade-up">
-        <a href="#" class="logo">
+      <div class="navbar-top">
+        <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
           <img src="img/horizontal-logo.svg" alt="logo" class="logo__image">
         </a>
 
-        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden" data-aos="fade-right" data-aos-delay="200">
           <input type="text" placeholder="Search Location" class="search__input">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: Search">
           </button>
         </form>
 
-         <a href="#" class="user navbar__user navbar__user--mobile_hidden">
+         <a href="#" class="user navbar__user navbar__user--mobile_hidden" data-aos="fade-right" data-aos-delay="300">
            <img src="img/user-avatar.jpg" alt="User: Avatar" class="user__avatar">
            <span class="user__name">Nathan</span>
          </a>
@@ -44,7 +45,7 @@
       <!-- navbar-top -->
     </div>
     <!-- /.container -->
-    <div class="navbar-bottom">
+    <div class="navbar-bottom" >
       <div class="container">
         <ul class="navbar-menu">
           <li class="navbar-menu__item navbar-menu__item--mobile_visible">
@@ -512,25 +513,25 @@
   <div class="container">
     <h2 class="activities__title">other activities</h2>
     <div class="activities-wrapper">
-      <div class="card activities__card">
+      <div class="card activities__card" data-aos="fade-right" data-aos-delay="100">
         <img src="img/activity-1.jpg" alt="Photo: activity" class="card__image card__img">
         <h3 class="card__title">The curious corner<br> of chamarel</h3>
         <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
       </div>
       <!-- card -->
-      <div class="card activities__card">
+      <div class="card activities__card" data-aos="fade-right" data-aos-delay="300">
         <img src="img/activity-2.jpg" alt="Photo: activity" class="card__image card__img">
         <h3 class="card__title">Gymkhana club golf<br> course</h3>
         <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
       </div>
       <!-- card -->
-      <div class="card activities__crd">
+      <div class="card activities__crd" data-aos="fade-right" data-aos-delay="500">
         <img src="img/activity-3.jpg" alt="Photo: activity" class="card__image card__img">
         <h3 class="card__title">Tamarind falls hiking<br> trip - full day</h3>
         <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
       </div>
       <!-- card -->
-      <div class="card">
+      <div class="card" data-aos="fade-right" data-aos-delay="700">
         <img src="img/activity-4.jpg" alt="Photo: activity" class="card__image">
         <h3 class="card__title">The blue marine discovery<br> quest</h3>
         <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
@@ -712,6 +713,7 @@
 <script src="js/parallax.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.mask.min.js"></script>
+<script src="js/aos.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
