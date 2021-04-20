@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - hotel Booking</title>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&family=Nunito:wght@400;600;800&display=swap"
@@ -581,13 +581,13 @@
         <h3 class="footer__title footer__title--inline">Social Network</h3>
         <div class="footer__social-links">
           <a href="https://ru-ru.facebook.com/" target="_blank" class="footer__link">
-            <img src="img/facebook.svg" alt="Icon: facebook">
+            <img src="img/facebook.svg" alt="Icon: facebook" class="hover">
           </a>
           <a href="https://www.youtube.com/" target="_blank" class="footer__link">
-            <img src="img/youtube.svg" alt="Icon: youtube">
+            <img src="img/youtube.svg" alt="Icon: youtube" class="hover">
           </a>
           <a href="https://www.instagram.com/?hl=ru" target="_blank" class="footer__link">
-            <img src="img/instagram.svg" alt="Icon: instagram">
+            <img src="img/instagram.svg" alt="Icon: instagram" class="hover">
           </a>
         </div>
         <!-- footer-social__links -->
@@ -657,7 +657,7 @@
           <img src="img/footer-last.png" alt="Icon: Company" class="footer-police__img">
         </div>
         <!-- footer-police__content -->
-      </div>
+      </div> hover
       <!-- footer__police -->
     </div>
     <!-- footer-wrapper -->
@@ -679,8 +679,11 @@
       <input type="tel" class="input phone modal__input" placeholder="Phone Number*" name="phone" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="17" maxlength="17" required>
       <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
       <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-      <button class="button modal__button" type="submit">Send</button>
-      <span class="modal__info">* Required Fields</span>
+      <!-- <div class="modal-block"> -->
+        <button class="button modal__button" type="submit">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      <!-- </div> -->
+      </div>
     </form>
   </div>
   <!-- modal__dialog -->
