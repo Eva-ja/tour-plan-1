@@ -32,27 +32,27 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", function () {
-  console.log("Клик по кнопке меню");
   document
     .querySelector(".navbar-bottom")
     .classList.toggle("navbar-bottom--visible");
-});
-
-var menuButton = document.querySelector(".menu-button");
-menuButton.addEventListener("click", function () {
-  console.log("Клик по кнопке меню");
   document
     .querySelector(".body_mobile")
     .classList.toggle("body_mobile--visible");
 });
 
-var bodyButton = document.querySelector(".booking__button");
-bodyButton.addEventListener("click", function () {
-  console.log("Клик по кнопке меню");
-  document
-    .querySelector(".body_mobile")
-    .classList.toggle("body_mobile--visible");
-});
+// var menuButton = document.querySelector(".menu-button");
+// menuButton.addEventListener("click", function () {
+//   document
+//     .querySelector(".body_mobile")
+//     .classList.toggle("body_mobile--visible");
+// });
+
+// var bodyButton = document.querySelector(".booking__button");
+// bodyButton.addEventListener("click", function () {
+//   document
+//     .querySelector(".body_mobile")
+//     .classList.toggle("body_mobile--visible");
+// });
 
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");

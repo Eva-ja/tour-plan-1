@@ -87,6 +87,10 @@
         max-width: 579px
         padding-right: 62px
         padding-left: 62px
+        &::before
+          display: none
+        &::after
+          display: none
       &__text
         height: 133px
       &__button
@@ -172,6 +176,7 @@
   .body
     &_mobile
       &--visible
+        position: fixed
         overflow-y: hidden
   .navbar
     &_mobile
@@ -478,8 +483,17 @@
       margin-bottom: 20px
     &-slider
       height: 180px
+      &__button
+        &--prev
+          background-size: 4px 7px
+          left: 10px
+        &--next
+          background-size: 4px 7px
+          right: 10px
   .map
     height: 173px
+    &__frame
+      height: 173px
   .newsletter
     &-title
       font-weight: 300
