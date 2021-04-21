@@ -40,20 +40,6 @@ menuButton.addEventListener("click", function () {
     .classList.toggle("body_mobile--visible");
 });
 
-// var menuButton = document.querySelector(".menu-button");
-// menuButton.addEventListener("click", function () {
-//   document
-//     .querySelector(".body_mobile")
-//     .classList.toggle("body_mobile--visible");
-// });
-
-// var bodyButton = document.querySelector(".booking__button");
-// bodyButton.addEventListener("click", function () {
-//   document
-//     .querySelector(".body_mobile")
-//     .classList.toggle("body_mobile--visible");
-// });
-
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
 modalButton.on("click", openModal);
@@ -81,4 +67,5 @@ $(document).keyup(function(e) {
       modalDialog.removeClass("modal__dialog--visible");
     }
 });
+
 });
